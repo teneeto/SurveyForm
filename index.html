@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="title">Survey Form</h1>
+    <div id="form">
+        <p id="description">We would like to learn from you on how <strong>Tora</strong> can better Serve You</p>
+        <form action="index.html" id="form-survey" method="GET">
+            <label for="name-label" class="labels"><sup>*</sup>Name:</label>
+            <input type="text" name="name" id="name" class="inputs" required autofocus placeholder="enter your name">
+
+            <label for="email-label" class="labels"><sup>*</sup>Email Address:</label>
+            <input type="email" name="email" id="email" class="inputs" required placeholder="enter your email">
+
+            <label for="age-label" class="labels"><sup>*</sup>Age:</label>
+            <input type="number" name="age" id="age" class="inputs" min="1" max="125" required placeholder="Age">
+
+            <label for="current-city" class="labels">which describes best your occupation?</label>
+            <select name="occupation" id="dropdown" class="inputs">
+                <option selected disabled value>select an option</option>
+                <option value="Student">Student</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Lawyer">Lawyer</option>
+                <option value="Civil Servant">Civil Service</option>
+                <option value="Force">Force</option>
+                <option value="Farmer">Farmer</option>
+                <option value="other">other</option>
+            </select>
+
+            <label for="rating" class="labels">How well do we meet your requirement?</label>
+            <ul class="type" class="inputs">
+                <li><label><input type="radio" name="rating" class="rading" value="1">Excellent</label></li>
+                <li><label><input type="radio" name="rating" class="rading" value="2">very good</label></li>
+                <li><label><input type="radio" name="rating" class="rading" value="3">good</label></li>
+                <li><label><input type="radio" name="rating" class="rading" value="4">fair</label></li>
+                <li><label><input type="radio" name="rating" class="rading" value="5">bad</label></li>
+            </ul>
+
+            <label for="advert-tracking" class="lables">How did you hear about <strong>Tora</strong>?</label>
+            <ul class="type">
+                <li><label><input type="checkbox" name="adtrack" id="" value ="facebook">facebook</label></li>
+                <li><label><input type="checkbox" name="adtrack" id="" value="twitter">twitter</label></li>
+                <li><label><input type="checkbox" name="adtrack" id="" value="website">website</label></li>
+                <li><label><input type="checkbox" name="adtrack" id="" value="techradar">techradar</label></li>
+                <li><label><input type="checkbox" name="adtrack" id="" value="Friend">Friend</label></li>
+
+            </ul>
+
+            <label for="comment" class="labels">Any Comment or Suggestion?</label>
+            <textarea name="comment" id="" class="inputs" cols="30" rows="10" placeholder="Enter Your Comment Here!"></textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
